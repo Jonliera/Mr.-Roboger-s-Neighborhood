@@ -1,7 +1,7 @@
 //business logic
 
 function roboger(userInput) {
-  const numArray = [];
+  let numArray = [];
   for (let index = 0; index <= userInput; index++) {
     numArray.push(index.toString());
     if ((numArray[index]).includes('3')){
@@ -18,4 +18,16 @@ function roboger(userInput) {
 };
 
 //User Interface Logic
+
+function handleFormSubmission(event){
+  event.preventDefault();
+  const input = document.getElementById('number').value;
+  const numArray = roboger(input);
+  document.getElementById('result').innerText = numArray;
+}
+
+window.addEventListener("load", function() {
+document.querySelector("form#user-input").addEventListener("submit", handleFormSubmission);
+});
+
 
