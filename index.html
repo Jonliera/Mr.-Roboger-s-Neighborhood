@@ -7,9 +7,11 @@
   <title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
-  <div id="container" class="jumbotron text-center">
+  
+  
+  <div id="container" class="jumbotron text-center" style="background-image: url('./img/sky.jpeg');">
     <h1>MR. ROBOGER'S NEIGHBORHOOD</h1>
-    <p>Oh! Mr. Roboger's likes numbers. So go ahead and think of a number </p>
+    
     <h2>Please go ahead and enter a number in the space below</h2>
     
     <form id="user-input">
@@ -17,11 +19,16 @@
         <label for ="number" >Right here </label>
         <input id ="number" type="text">
       </div>
-      <button type ="submit">Show me my numbers!!!</button>
+      <button type ="submit" class="btn btn-info btn-lg btn-lg">Show me my numbers!!!</button>
     </form>
-    <h3>Here are your results</h3>
-    <span id="result"></span>
+    <h3>Mr. Robogers answer:</h3>
+    <div >
+    <div id="answer">
+      <span id="result" class="answer"></span>
+    </div>
   </div>
-  <img src="img/rogers.jpeg" alt="A picture of Trippy Mr. Rogers">
+  
+  <img src="img/rogers.jpeg" class="rounded mx-auto d-block" alt="A picture of Trippy Mr. Rogers">
+</div>
 </body>
 </html>
